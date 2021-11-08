@@ -7,43 +7,214 @@
     tools:context=".SummaryActivity">
 
     <TextView
-        android:id="@+id/textIme"
-        android:layout_width="98dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="157dp"
-        android:layout_marginTop="89dp"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="28dp"
-        android:text="Ime"
-        app:layout_constraintBottom_toTopOf="@+id/textPredmet"
+        android:id="@+id/tvfwdPrezimeProf"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdPrezimeProf"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdImeProf" />
+
+    <TextView
+        android:id="@+id/tvfwdAkGod"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdAkGod"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdPrezimeProf" />
+
+    <TextView
+        android:id="@+id/tvfwdBrPred"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdBrPred"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdAkGod" />
+
+    <TextView
+        android:id="@+id/tvfwdBrLV"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdBrLV"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdBrPred" />
+
+    <TextView
+        android:id="@+id/tvfwdDatum"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdDatum"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdPrezime" />
+
+    <TextView
+        android:id="@+id/tvfwdImeProf"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/tfwdImeProf"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdDatum" />
+
+    <TextView
+        android:id="@+id/tvfwdIme"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdIme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tfwdBrLV"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Broj sati LV-a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdBrPred" />
+
+    <TextView
+        android:id="@+id/tfwdBrPred"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Broj sati predavanja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdAkGod" />
+
+    <TextView
+        android:id="@+id/tfwdAkGod"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Akademska godina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdPrezimeProf" />
+
+    <TextView
+        android:id="@+id/tfwdPrezimeProf"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Prezime profesora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdImeProf" />
+
+    <TextView
+        android:id="@+id/tfwdIme"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Ime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textPredmet"
-        android:layout_width="94dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
-        android:text="Predmet"
-        app:layout_constraintBottom_toTopOf="@+id/btnKraj"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:id="@+id/tfwdDatum"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Datum"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textIme" />
+        app:layout_constraintTop_toBottomOf="@+id/tfwdPrezime" />
+
+    <TextView
+        android:id="@+id/tfwdPrezime"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdIme" />
+
+    <TextView
+        android:id="@+id/tfwdImeProf"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Ime profesora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tfwdDatum" />
+
+    <TextView
+        android:id="@+id/tvfwdPrezime"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="#a46a6a"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tfwdPrezime"
+        app:layout_constraintTop_toBottomOf="@+id/tvfwdIme" />
 
     <Button
         android:id="@+id/btnKraj"
-        android:layout_width="103dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="427dp"
-        android:text="Kraj"
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#919191"
+        android:text="kraj"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPredmet" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

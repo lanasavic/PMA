@@ -12,10 +12,23 @@ import android.widget.TextView;
 
 public class SummaryActivity extends AppCompatActivity {
     private String fwdIme;
+    private String fwdPrezime;
+    private String fwdDatum;
     private String fwdPredmet;
+    private String fwdImeProf;
+    private String fwdPrezimeProf;
+    private String fwdAkGod;
+    private String fwdBrPred;
+    private String fwdBrLV;
     private Button btnKraj;
     private TextView oIme;
-    private TextView oPredmet;
+    private TextView oPrezime;
+    private TextView oDatum;
+    private TextView oImeProf;
+    private TextView oPrezimeProf;
+    private TextView oAkGod;
+    private TextView oBrPred;
+    private TextView oBrLV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +36,32 @@ public class SummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_summary);
         final Bundle oExtras = getIntent().getExtras();
         fwdIme = oExtras.getString("Ime");
-        fwdPredmet = oExtras.getString("Predmet");
+        fwdPrezime = oExtras.getString("Prezime");
+        fwdDatum = oExtras.getString("Datum");
+        fwdImeProf = oExtras.getString("ImeProf");
+        fwdPrezimeProf = oExtras.getString("PrezimeProf");
+        fwdAkGod = oExtras.getString("AkGod");
+        fwdBrPred = oExtras.getString("BrPred");
+        fwdBrLV = oExtras.getString("BrLV");
+
         btnKraj = (Button) findViewById(R.id.btnKraj);
 
-        oIme = (TextView)findViewById(R.id.textIme);
+        oIme = (TextView)findViewById(R.id.tvfwdIme);
         oIme.setText(fwdIme);
-
-        oPredmet = (TextView)findViewById(R.id.textPredmet);
-        oPredmet.setText(fwdPredmet);
+        oPrezime = (TextView)findViewById(R.id.tvfwdPrezime);
+        oPrezime.setText(fwdPrezime);
+        oDatum = (TextView)findViewById(R.id.tvfwdDatum);
+        oDatum.setText(fwdDatum);
+        oImeProf = (TextView)findViewById(R.id.tvfwdImeProf);
+        oImeProf.setText(fwdImeProf);
+        oPrezimeProf = (TextView)findViewById(R.id.tvfwdPrezimeProf);
+        oPrezimeProf.setText(fwdPrezimeProf);
+        oAkGod = (TextView)findViewById(R.id.tvfwdAkGod);
+        oAkGod.setText(fwdAkGod);
+        oBrPred = (TextView)findViewById(R.id.tvfwdBrPred);
+        oBrPred.setText(fwdBrPred);
+        oBrLV = (TextView)findViewById(R.id.tvfwdBrLV);
+        oBrLV.setText(fwdBrLV);
 
         btnKraj.setOnClickListener(new View.OnClickListener() {
             @Override
