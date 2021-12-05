@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInfoActivity">
+
+    <TextView
+        android:id="@+id/tvHelper5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/helper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="309dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptPredmet"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Predmet" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptImeProf"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Ime profesora" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptPrezimeProf"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Prezime profesora" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptAkGod"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Akademska godina" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptBrPred"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Broj sati predavanja" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptBrLV"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Broj sati LV-a" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

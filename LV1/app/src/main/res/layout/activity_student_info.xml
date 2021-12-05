@@ -34,7 +34,7 @@
         android:layout_height="65dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#919191"
+        android:backgroundTint="#2196F3"
         android:text="Dalje"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -44,15 +44,15 @@
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txtPred">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inptImeProf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ime" />
+            android:hint="Ime profesora" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -60,17 +60,17 @@
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtImeProf"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txtPred">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inptPrezimeProf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Prezime" />
+            android:hint="Prezime profesora" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -138,6 +138,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Unesite br. sati LV-a" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPred"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtImeProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inptPredmet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Predmet" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

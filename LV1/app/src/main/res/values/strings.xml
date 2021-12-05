@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">LV1</string>
+    <string name="app_name">PMA</string>
+    <string name="helper">Swipe from right to left / FRAGMENTS</string>
+    <string name="studentinfo">Informacije o studentu</string>
+    <string name="predmetinfo">Informacije o predmetu</string>
+    <string name="helperImPr">Ime i prezime: </string>
+    <string name="helperDat">Datum rodenja: </string>
+    <string name="helperPre">Predmet: </string>
+    <string name="helperProf">Profesor: </string>
+    <string name="helperAkG">Akademska godina: </string>
+    <string name="helperBP">Broj sati predavanja: </string>
+    <string name="helperBLV">Broj sati LV-a: </string>
 </resources>

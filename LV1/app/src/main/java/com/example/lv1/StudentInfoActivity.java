@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class StudentInfoActivity extends AppCompatActivity {
+    private EditText oPredmet;
     private EditText oImeProf;
     private EditText oPrezimeProf;
     private EditText oAkGod;
@@ -17,6 +18,7 @@ public class StudentInfoActivity extends AppCompatActivity {
     private String fwdIme;
     private String fwdPrezime;
     private String fwdDatum;
+    private String newPredmet;
     private String newImeProf;
     private String newPrezimeProf;
     private String newAkGod;
@@ -32,6 +34,7 @@ public class StudentInfoActivity extends AppCompatActivity {
         fwdPrezime = oExtras.getString("Prezime");
         fwdDatum = oExtras.getString("Datum");
 
+        oPredmet = (EditText) findViewById(R.id.inptPredmet);
         oImeProf = (EditText) findViewById(R.id.inptImeProf);
         oPrezimeProf = (EditText) findViewById(R.id.inptPrezimeProf);
         oAkGod = (EditText) findViewById(R.id.inptAkGod);
@@ -42,6 +45,7 @@ public class StudentInfoActivity extends AppCompatActivity {
         btnDalje2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                newPredmet = oPredmet.getText().toString();
                 newImeProf = oImeProf.getText().toString();
                 newPrezimeProf = oPrezimeProf.getText().toString();
                 newAkGod = oAkGod.getText().toString();
@@ -51,6 +55,7 @@ public class StudentInfoActivity extends AppCompatActivity {
                 intent2.putExtra("Ime", fwdIme);
                 intent2.putExtra("Prezime", fwdPrezime);
                 intent2.putExtra("Datum", fwdDatum);
+                intent2.putExtra("Predmet", newPredmet);
                 intent2.putExtra("ImeProf", newImeProf);
                 intent2.putExtra("PrezimeProf", newPrezimeProf);
                 intent2.putExtra("AkGod", newAkGod);
